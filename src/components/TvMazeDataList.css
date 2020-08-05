@@ -1,0 +1,73 @@
+body {
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+    background: #222;
+}
+.TvMazeDataList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+.card {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 200px 90px 70px;
+    grid-template-areas: 'picture' 'text' 'info';
+
+    border-radius: 1px;
+    background: white;
+    box-shadow: 5px 5px 15px black;
+    font-family: roboto;
+    text-align: center;
+    margin: 30px;
+}
+.picture {
+    grid-area: pictures;
+    border-top-left-radius: 15px;
+    border-top-left-radius: 15
+    tpx;
+    background-size: cover;
+}
+
+.text {
+    grid-area: text;
+    margin: 25px;
+}
+.text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.info {
+    grid-area: info;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15tpx;
+    background: rgb(132, 0, 255);
+
+}
+
+.info .data {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.info .border {
+    border-left: 1px solid rgb(132, 0, 255);
+}
+.info .value {
+    font-size: 22px;
+    font-weight: 900;
+}
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px black;
+}
